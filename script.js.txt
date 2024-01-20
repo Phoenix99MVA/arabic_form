@@ -1,0 +1,13 @@
+// script.js
+function calculateScore() {
+  var totalScore = 0;
+
+  // Get the selected values for each question and calculate the total score
+  for (var i = 1; i <= 10; i++) {
+    var selectedValue = parseInt(document.getElementById('q' + i).value);
+    totalScore += selectedValue;
+  }
+
+  // Display the result
+  document.getElementById('result').innerHTML = 'النتيجة الإجمالية: ' + totalScore + ' نقطة';
+}
